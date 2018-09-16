@@ -93,3 +93,6 @@ var updatePage = function(NYTData) {
 
 }
 
+
+
+getArticles()
