@@ -1,7 +1,3 @@
-var buildQueryURL = function() {
-
-
-}
 
 var getArticles = function(searchTerm) {
 
@@ -15,10 +11,22 @@ var getArticles = function(searchTerm) {
     if (searchTerm === "election")
     {
         queryParams.q = "Ohio+Governor+Election+2018"
+        
+        //sorting: default is sort by relevance
+        if ($("#sort-input").val() === "newest"){
+            queryParams.sort = "newest"
+        } else if ($("#sort-input").val() === "oldest") {
+            queryParams.sort = "oldest"
+        }
+
+        //dates
+        //queryParams.begin_date = "YYYYMMDD"
+        //queryParams.end_date = "YYYYMMDD"
+
     } else {
         queryParams.q = searchTerm
     }
-    
+
     //return full URL
     queryURL += $.param(queryParams);
 
@@ -65,31 +73,27 @@ var updatePage = function(NYTData) {
         );
         }
 
-        // If the article has a byline, log and append to $articleList
+        // Append a byline to document if exists
         var byline = article.byline;
-
         if (byline && byline.original) {
-        console.log(byline.original);
-        $articleListItem.append("<h5>" + byline.original + "</h5>");
+        $articleListItem.append("<h6>" + byline.original + "</h6>");
         }
 
-        // Log section, and append to document if exists
+        // Append section to document if exists
         var section = article.section_name;
-        console.log(article.section_name);
         if (section) {
-        $articleListItem.append("<h5>Section: " + section + "</h5>");
+        $articleListItem.append("<h6>Section: " + section + "</h6>");
         }
 
-        // Log published date, and append to document if exists
+        // Append published date to document if exists
+        // TODO: need to format date
         var pubDate = article.pub_date;
-        console.log(article.pub_date);
         if (pubDate) {
-        $articleListItem.append("<h5>" + article.pub_date + "</h5>");
+        $articleListItem.append("<h6>" + article.pub_date + "</h6>");
         }
 
-        // Append and log url
-        $articleListItem.append("<a href='" + article.web_url + "'>" + article.web_url + "</a>");
-        console.log(article.web_url);
+        // Append and url
+        $articleListItem.append("<a href='" + article.web_url + "'>" + "Full Article" + "</a>");
 
         // Append the article
         $articleList.append($articleListItem);
@@ -99,5 +103,12 @@ var updatePage = function(NYTData) {
 }
 
 
+$("#search").on("click", function(event) {
+    console.log("search")
+    event.preventDefault();
 
+    $("#article-list").empty();
 
+    getArticles("election")
+
+});
