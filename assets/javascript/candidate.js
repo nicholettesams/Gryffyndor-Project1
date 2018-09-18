@@ -1,5 +1,10 @@
 var buildQueryURL = function() {
 
+
+}
+
+var getArticles = function(searchTerm) {
+
     //URL to API
     var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?";
 
@@ -7,15 +12,15 @@ var buildQueryURL = function() {
     var queryParams = { "api-key": "b9f91d369ff59547cd47b931d8cbc56b:0:74623931" };
 
     //query parameters
-    queryParams.q = "Ohio+Governor+Election"
-
+    if (searchTerm === "election")
+    {
+        queryParams.q = "Ohio+Governor+Election+2018"
+    } else {
+        queryParams.q = searchTerm
+    }
+    
     //return full URL
-    return queryURL + $.param(queryParams);
-}
-
-var getArticles = function() {
-
-    var queryURL = buildQueryURL();
+    queryURL += $.param(queryParams);
 
     $.ajax({
         url: queryURL,
@@ -31,7 +36,7 @@ var getArticles = function() {
 var updatePage = function(NYTData) {
 
     //Loop through articles and display on page
-    for (var i = 0; i < 20; i++) {
+    for (var i = 0; i < 10; i++) {
         var article = NYTData.response.docs[i];
 
         // Increase the articleCount (track article # - starting at 1)
@@ -92,4 +97,7 @@ var updatePage = function(NYTData) {
 
 
 }
+
+
+
 
