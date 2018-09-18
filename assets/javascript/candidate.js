@@ -2,6 +2,7 @@
 var getArticles = function(searchTerm) {
 
     //URL to API
+    //Requirement: API #1
     var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?";
 
     //API key
@@ -20,8 +21,12 @@ var getArticles = function(searchTerm) {
         }
 
         //dates
-        //queryParams.begin_date = "YYYYMMDD"
-        //queryParams.end_date = "YYYYMMDD"
+        //if (_.isDate($("#begin-input").val()){
+            //queryParams.begin_date = "YYYYMMDD"
+        //}
+        //if (_.isDate($("#end-input").val()){
+            //queryParams.end_date = "YYYYMMDD"
+        //}
 
     } else {
         queryParams.q = searchTerm
@@ -44,6 +49,7 @@ var getArticles = function(searchTerm) {
 var updatePage = function(NYTData) {
 
     //Loop through articles and display on page
+    //Requirement: Repeating element
     for (var i = 0; i < 10; i++) {
         var article = NYTData.response.docs[i];
 
@@ -61,25 +67,25 @@ var updatePage = function(NYTData) {
         if (headline && headline.main) {
             console.log(headline.main);
             $articleListItem.append(
-            "<a href='" + article.web_url + "' target='_blank'><strong>" + headline.main + "</strong></a>");
+            "<a href='" + article.web_url + "' target='_blank'><strong>" + _.escape(headline.main) + "</strong></a>");
         }
 
         // Append a byline to document if exists
         var byline = article.byline;
         if (byline && byline.original) {
-            $articleListItem.append("<h6>" + byline.original + "</h6>");
+            $articleListItem.append("<h6>" + _.escape(byline.original) + "</h6>");
         }
 
         // Append section to document if exists
         var section = article.section_name;
         if (section) {
-            $articleListItem.append("<h6>Section: " + section + "</h6>");
+            $articleListItem.append("<h6>Section: " + _.escape(section) + "</h6>");
         }
 
         // Append published date to document if exists
         var pubDate = article.pub_date
         console.log(pubDate)
-        if (pubDate) {
+        if (pubDate && _.isDate(pubDate)) {
             pubDate = dateFns.format(pubDate, "YYYY-MM-DD");
             $articleListItem.append("<h6>" + pubDate + "</h6>");
         }
