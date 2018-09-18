@@ -85,7 +85,7 @@ var updatePage = function(NYTData) {
         // Append published date to document if exists
         var pubDate = article.pub_date
         console.log(pubDate)
-        if (pubDate && _.isDate(pubDate)) {
+        if (pubDate) {
             pubDate = dateFns.format(pubDate, "YYYY-MM-DD");
             $articleListItem.append("<h6>" + pubDate + "</h6>");
         }
