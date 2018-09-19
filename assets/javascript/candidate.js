@@ -1,4 +1,6 @@
-
+/************************/
+/*  Ariticle Search     */
+/************************/
 var getArticles = function(searchTerm) {
 
     //URL to API
@@ -129,12 +131,43 @@ var noCount = 0
 var unsureCount = 0
 
 var displayResults = function(){
-    //may use Chart.js to make a graphical chart
-    //http://www.chartjs.org/docs/latest/getting-started/
 
-    $("#yesCount").text(yesCount)
-    $("#noCount").text(noCount)
-    $("#unsureCount").text(unsureCount)
+    //Use Chart.js to make a graphical chart
+    var data = {
+        datasets: [{
+            data: [
+                yesCount,
+                noCount,
+                unsureCount
+            ],
+            backgroundColor: [
+                "green", 
+                "red", 
+                "yellow"
+            ]
+        }],
+        labels: ["Yes", "No", "Unsure"]
+    };
+
+    var options = {
+        responsive: true,
+        title: {
+            display: true,
+            text: "Poll Results"
+        },
+        animation: {
+            animateScale: true,
+            animateRotate: true
+        }
+    }
+
+    //doughnut chart
+    var ctx = $("#myChart");
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: data,
+        options: options
+    });
 }
 
 $("#vote").on("click", function(event) {
