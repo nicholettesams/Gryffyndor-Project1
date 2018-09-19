@@ -15,12 +15,12 @@ $(document).on("click", "#submit", function() {
     }).then(function(response){
         console.log(queryURL);
         console.log(response);
-        //console.log(response.officials[5].name);
-        //console.log(response.officials[5].party);
-        //console.log(response.officials[5].photoUrl);
+        console.log(response.officials[0].name);
+        console.log(response.officials[0].party);
+        console.log(response.officials[0].photoUrl);
         presidentDiv = $("#rep-info");
         nameP = $("<p></p>");
-        nameP.text(response.officials[5].name);
+        nameP.text(response.officials[0].name);
         presidentDiv.append(nameP);
     })
 
