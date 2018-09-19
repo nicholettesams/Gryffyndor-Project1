@@ -23,20 +23,59 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="index.html">Home</a>
-                    <a class="nav-item nav-link" href="cordray.html">Richard Cordray</a>
+                    <a class="nav-item nav-link active" href="cordray.html">Richard Cordray</a>
                     <span class="sr-only">(current)</span>
                     <a class="nav-item nav-link" href="dewine.html">Mike Dewine</a>
                     <a class="nav-item nav-link" href="irvine.html">Travis Irvine</a>
-                    <a class="nav-item nav-link active" href="newton.html">Constance Gadell-Newton</a>
+                    <a class="nav-item nav-link" href="newton.html">Constance Gadell-Newton</a>
                     </a>
                 </div>
             </div>
         </nav>
     </header>
-
-    <div class="py-3 fixed-bottom text-center bg-secondary text-white">
-        Copyright &copy; 2018 Gryffndor
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">Ohio Gov Candidates</h1>
+            <p class="lead">This is where we write a neat headline. (The 2018 Ohio gubernatorial election will take
+                place on November 6, 2018)</p>
+            <!-- Add countdown timer until election day? -->
+        </div>
     </div>
-</body>
+    <h3>2018 Candidates</h3>
+        <div class="col-md-3">
+            <div class="media dem">
+                <div class="media-body">
+                    <h4 class="mt-0 mb-3">Richard Cordray</h4>
+                    <h6>Running mate: Betty Sutton</h6>
+                    <ul class="list-group">
+                        <li>Former Director of the Consumer Financial Protection Bureau</li>
+                        <li>Former Ohio Attorney General</li>
+                        <li>Former Ohio State Treasurer</li>
+                        <li>Porta ac consectetur ac</li>
+                        <li>Vestibulum at eros</li>
+                    </ul>
+                </div>
+                <img class="ml-3" src="https://upload.wikimedia.org/wikipedia/commons/d/df/Richard_Cordray_official_portrait_%28cropped%29.jpg"
+                    alt="Richard Cordray">
+            </div>
+        </div>
+
+        <div id="article-list">
+
+        </div>
+
+        <div class="py-3 fixed-bottom text-center bg-secondary text-white">
+            Copyright &copy; 2018 Gryffndor
+        </div>
+
+
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script src="assets/javascript/candidate.js"></script>
+        <script>
+            getArticles("Richard+Cordray")
+        </script>
+    </body>
 
 </html>
