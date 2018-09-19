@@ -124,39 +124,46 @@
                     </div>
                 </div>
             </div> -->
-        <!-- <div class="py-3 fixed-bottom text-center bg-secondary text-white">
+
+        <form id="article-input" class="form-inline row">
+        
+            <label for="begin-input">From Date:</label>
+            <input id="begin-input" type="date" name="begin-input">
+        
+            <label for="end-input">To Date:</label>
+            <input id="end-input"type="date" name="end-input">
+        
+            <label for="sort-input">Sort By:</label>
+            <select id="sort-input" name="sort-input">
+                <option value="relevance">Relevance</option>
+                <option value="newest">Date: Newest</option>
+                <option value="oldest">Date: Oldest</option>
+            </select>
+            
+            <input id="search" type="submit" value="search">
+        </form>
+        <section id="article-list">
+        </section>
+
+        <div class="py-3 fixed-bottom text-center bg-secondary text-white">
                 Copyright &copy; 2018 Gryffndor
-            </div> -->
-            <form id="article-input">
-                <label for="begin-input">From Date:</label>
-                <input type="date" name="begin-input">
-                <label for="end-input">To Date:</label>
-                <input type="date" name="end-input">
-                <label for="sort-input">Sort By:</label>
-                <select id="sort-input" name="sort-input">
-                    <option value="relevance">Relevance</option>
-                    <option value="newest">Date: Newest</option>
-                    <option value="oldest">Date: Oldest</option>
-                </select>
-                <input id="search" type="submit" value="search">
-            </form>
-            <div id="article-list">
-            </div>
-    
-      <!-- jQuery -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </div> 
+    </div>
 
-      <!-- Date/Time Library -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.29.0/date_fns.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-      <!-- Underscore-->
-      <script src="https://cdn.jsdelivr.net/npm/underscore@1.9.1/underscore.min.js"></script>
+    <!-- Date/Time Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.29.0/date_fns.min.js"></script>
 
-      <script src="assets/javascript/candidate.js"></script>
+    <!-- Underscore-->
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.9.1/underscore.min.js"></script>
 
-      <script>
-          getArticles("election")
-      </script>
+    <script src="assets/javascript/candidate.js"></script>
+
+    <script>
+        getArticles("election")
+    </script>
 </body>
 
 </html>

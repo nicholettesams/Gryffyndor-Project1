@@ -21,12 +21,14 @@ var getArticles = function(searchTerm) {
         }
 
         //dates
-        //if (_.isDate($("#begin-input").val()){
-            //queryParams.begin_date = "YYYYMMDD"
-        //}
-        //if (_.isDate($("#end-input").val()){
-            //queryParams.end_date = "YYYYMMDD"
-        //}
+        var beginDate = $("#begin-input").val()
+        if (beginDate){
+            queryParams.begin_date = dateFns.format(beginDate, "YYYYMMDD")
+        }
+        var endDate = $("#end-input").val()
+        if (endDate){
+            queryParams.end_date = dateFns.format(endDate, "YYYYMMDD")
+        }
 
     } else {
         queryParams.q = searchTerm
