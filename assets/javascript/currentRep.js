@@ -98,6 +98,7 @@ $(document).ready(function() {
                 $("#houseRepImg").attr("src", response.officials[0].photoUrl);
                 $("#houseRepParty").text(response.officials[0].party);
                 $("#houseRepLink").attr("href", response.officials[0].urls[0]);
+                $("#houseRepPhone").text("Phone: " + response.officials[0].phones[0]);
 
             });
         };
