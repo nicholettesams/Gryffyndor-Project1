@@ -1,4 +1,6 @@
-
+/************************/
+/*  Ariticle Search     */
+/************************/
 var getArticles = function(searchTerm) {
 
     //URL to API
@@ -21,12 +23,14 @@ var getArticles = function(searchTerm) {
         }
 
         //dates
-        //if (_.isDate($("#begin-input").val()){
-            //queryParams.begin_date = "YYYYMMDD"
-        //}
-        //if (_.isDate($("#end-input").val()){
-            //queryParams.end_date = "YYYYMMDD"
-        //}
+        var beginDate = $("#begin-input").val()
+        if (beginDate){
+            queryParams.begin_date = dateFns.format(beginDate, "YYYYMMDD")
+        }
+        var endDate = $("#end-input").val()
+        if (endDate){
+            queryParams.end_date = dateFns.format(endDate, "YYYYMMDD")
+        }
 
     } else {
         queryParams.q = searchTerm
@@ -65,7 +69,6 @@ var updatePage = function(NYTData) {
         var $articleListItem = $("<li class='list-group-item articleHeadline'>");
 
         if (headline && headline.main) {
-            console.log(headline.main);
             $articleListItem.append(
             "<a href='" + article.web_url + "' target='_blank'><strong>" + _.escape(headline.main) + "</strong></a>");
         }
@@ -84,7 +87,6 @@ var updatePage = function(NYTData) {
 
         // Append published date to document if exists
         var pubDate = article.pub_date
-        console.log(pubDate)
         if (pubDate) {
             pubDate = dateFns.format(pubDate, "YYYY-MM-DD");
             $articleListItem.append("<h6>" + pubDate + "</h6>");
@@ -97,7 +99,6 @@ var updatePage = function(NYTData) {
 
 }
 
-
 $("#search").on("click", function(event) {
     console.log("search")
     event.preventDefault();
@@ -106,4 +107,110 @@ $("#search").on("click", function(event) {
 
     getArticles("election")
 
+});
+
+/************************/
+/*     Voting           */
+/************************/
+
+// Initialize Firebase
+var config = {
+apiKey: "AIzaSyCduG32qZuTRqTyefAQnB9AC-d0fIXNg4I",
+authDomain: "gryffyndor-project1.firebaseapp.com",
+databaseURL: "https://gryffyndor-project1.firebaseio.com",
+projectId: "gryffyndor-project1",
+storageBucket: "gryffyndor-project1.appspot.com",
+messagingSenderId: "920489072493"
+};
+
+firebase.initializeApp(config);
+
+var database = firebase.database();
+var yesCount = 0
+var noCount = 0
+var unsureCount = 0
+
+var displayResults = function(){
+
+    //Use Chart.js to make a graphical chart
+    var data = {
+        datasets: [{
+            data: [
+                yesCount,
+                noCount,
+                unsureCount
+            ],
+            backgroundColor: [
+                "green", 
+                "red", 
+                "yellow"
+            ]
+        }],
+        labels: ["Yes", "No", "Unsure"]
+    };
+
+    var options = {
+        responsive: true,
+        title: {
+            display: true,
+            text: "Poll Results"
+        },
+        animation: {
+            animateScale: true,
+            animateRotate: true
+        }
+    }
+
+    //doughnut chart
+    var ctx = $("#myChart");
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: data,
+        options: options
+    });
+}
+
+$("#vote").on("click", function(event) {
+    console.log("vote")
+    event.preventDefault();
+
+    if ($("#optYes").is(":checked")){
+        yesCount++
+        console.log("Yes: " + yesCount)
+    } else if ($("#optNo").is(":checked")){
+        noCount++
+        console.log("No: " + noCount)
+    } else if ($("#optUnsure").is(":checked")){
+        unsureCount++
+        console.log("Unsure: " + unsureCount)
+    } else {
+        console.log("no selection")
+    }
+
+    database.ref().set({
+        yesCount: yesCount,
+        noCount: noCount,
+        unsureCount: unsureCount
+    });
+
+});
+
+
+database.ref().on("value", function(snapshot) {
+
+    var sv = snapshot.val()
+
+    yesCount = sv.yesCount
+    noCount = sv.noCount
+    unsureCount = sv.unsureCount
+
+    console.log("Yes: " + yesCount)
+    console.log("No: " + noCount)
+    console.log("Unsure: " + unsureCount)
+
+    //display to HTML
+    displayResults()
+
+}, function(err){
+    console.log("Database read error: " + err.code)
 });
