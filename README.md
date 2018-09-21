@@ -54,14 +54,17 @@ A non-scientific poll can also be found on the home page asking visitors, "Do yo
   3.  money raised
 - Display candidate information for states other than just Ohio.
 
-<!--HTML/CSS items to fix-->
+<!--HTML/CSS/Bootstrap items to fix-->
 <!--Highlighting of current tabs-->
-<!--Format of current rep page-->
 <!--Decide on format for candidate pages-->
-<!--Wikipedia drop caret/was working before :( -->
-<!--Search button/looks cute don't work, not sure if we keep -->
+<!--Wikipedia drop caret not working/was working before :( -->
+<!--Search button added/looks cute but don't work, not sure if we keep -->
 <!--Center poll to index.html page -->
 <!--Cordray index.html picture formatting is making me kinda mad -->
 <!--Gadell-Newton page left in old format for science -->
 <!--Add party color coding -->
 <!--Decide on text to include on candidate pages -->
+<!--MISC/New bootstrap added, lots of folders, not sure all are needed, will clean-up>
+<!--Formatting of location of CSS files change due to new bootstrap added>
+<!--Glyphicons and font folder added for cuteness -->
+<!--JS folder added for bootstrap -->
