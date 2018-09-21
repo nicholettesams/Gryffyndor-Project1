@@ -70,19 +70,19 @@ var updatePage = function(NYTData) {
 
         if (headline && headline.main) {
             $articleListItem.append(
-            "<a href='" + article.web_url + "' target='_blank'><strong>" + _.escape(headline.main) + "</strong></a>");
+            "<a href='" + article.web_url + "' target='_blank'><strong>" + headline.main + "</strong></a>");
         }
 
         // Append a byline to document if exists
         var byline = article.byline;
         if (byline && byline.original) {
-            $articleListItem.append("<h6>" + _.escape(byline.original) + "</h6>");
+            $articleListItem.append("<h6>" + byline.original + "</h6>");
         }
 
         // Append section to document if exists
         var section = article.section_name;
         if (section) {
-            $articleListItem.append("<h6>Section: " + _.escape(section) + "</h6>");
+            $articleListItem.append("<h6>Section: " + section + "</h6>");
         }
 
         // Append published date to document if exists
