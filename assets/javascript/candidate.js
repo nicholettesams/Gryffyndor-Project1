@@ -11,7 +11,7 @@ var getArticles = function(searchTerm) {
     var queryParams = { "api-key": "b9f91d369ff59547cd47b931d8cbc56b:0:74623931" };
 
     //query parameters
-    if (searchTerm === "election")
+    if (searchTerm === "election")  //called from index page
     {
         queryParams.q = "Ohio+Governor+Election+2018"
         
@@ -32,13 +32,14 @@ var getArticles = function(searchTerm) {
             queryParams.end_date = dateFns.format(endDate, "YYYYMMDD")
         }
 
-    } else {
+    } else { //called from candidate pages
         queryParams.q = searchTerm
     }
 
     //return full URL
     queryURL += $.param(queryParams);
 
+    //ajax request and then call updatePage function
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -67,7 +68,6 @@ var updatePage = function(NYTData) {
         // If the article has a headline, log and append to $articleList
         var headline = article.headline;
         var $articleListItem = $("<li class='list-group-item articleHeadline'>");
-
         if (headline && headline.main) {
             $articleListItem.append(
             "<a href='" + article.web_url + "' target='_blank'><strong>" + headline.main + "</strong></a>");
@@ -96,15 +96,15 @@ var updatePage = function(NYTData) {
         $articleList.append($articleListItem);
     }
 
-
 }
 
 $("#search").on("click", function(event) {
-    console.log("search")
+
     event.preventDefault();
 
+    //When user clicks search, reload the articles 
     $("#article-list").empty();
-
+    
     getArticles("election")
 
 });
@@ -133,6 +133,8 @@ var unsureCount = 0
 var displayResults = function(){
 
     //Use Chart.js to make a graphical chart
+
+    //set configuration of the chart
     var data = {
         datasets: [{
             data: [
@@ -171,22 +173,20 @@ var displayResults = function(){
 }
 
 $("#vote").on("click", function(event) {
-    console.log("vote")
     event.preventDefault();
 
+    //increase count depending on which radio button is selected
     if ($("#optYes").is(":checked")){
         yesCount++
-        console.log("Yes: " + yesCount)
     } else if ($("#optNo").is(":checked")){
         noCount++
-        console.log("No: " + noCount)
     } else if ($("#optUnsure").is(":checked")){
         unsureCount++
-        console.log("Unsure: " + unsureCount)
     } else {
         console.log("no selection")
     }
 
+    //update database
     database.ref().set({
         yesCount: yesCount,
         noCount: noCount,
@@ -200,13 +200,10 @@ database.ref().on("value", function(snapshot) {
 
     var sv = snapshot.val()
 
+    //set local counts with counts from database
     yesCount = sv.yesCount
     noCount = sv.noCount
     unsureCount = sv.unsureCount
-
-    console.log("Yes: " + yesCount)
-    console.log("No: " + noCount)
-    console.log("Unsure: " + unsureCount)
 
     //display to HTML
     displayResults()
