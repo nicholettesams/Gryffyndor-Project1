@@ -124,35 +124,79 @@
                     </div>
                 </div>
             </div> -->
-        <!-- <div class="py-3 fixed-bottom text-center bg-secondary text-white">
-                Copyright &copy; 2018 Gryffndor
-            </div> -->
-            <form id="article-input">
-                <label for="sort-input">Sort By:</label>
-                <select id="sort-input" name="sort-input">
-                    <option value="relevance">Relevance</option>
-                    <option value="newest">Date: Newest</option>
-                    <option value="oldest">Date: Oldest</option>
-                </select>
-                <input id="search" type="submit" value="search">
-            </form>
-            <div id="article-list">
+        <div class="card">
+            <h5 class="card-title">Are you planning to vote in the 2018 Midterm Elections?</h5>
+            <div class="card-body">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="vote" id="optYes" value="option1">
+                        Yes
+                    </label>
+                    </div>
+                    <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="vote" id="optNo" value="option2">
+                        No
+                    </label>
+                    </div>
+                    <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="vote" id="optUnsure" value="option3">
+                        Unsure
+                    </label>
+                    <br>
+                    <input id="vote" type="submit" value="Vote">
+                </div>
             </div>
-    
-      <!-- jQuery -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <div id="canvas-holder" style="width:40%">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+      
+            
 
-      <!-- Date/Time Library -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.29.0/date_fns.min.js"></script>
+        <form id="article-input" class="form-inline row">
+        
+            <label for="begin-input">From Date:</label>
+            <input id="begin-input" type="date" name="begin-input">
+        
+            <label for="end-input">To Date:</label>
+            <input id="end-input"type="date" name="end-input">
+        
+            <label for="sort-input">Sort By:</label>
+            <select id="sort-input" name="sort-input">
+                <option value="relevance">Relevance</option>
+                <option value="newest">Date: Newest</option>
+                <option value="oldest">Date: Oldest</option>
+            </select>
+            
+            <input id="search" type="submit" value="Search">
+        </form>
+        <section id="article-list">
+        </section>
 
-      <!-- Underscore-->
-      <script src="https://cdn.jsdelivr.net/npm/underscore@1.9.1/underscore.min.js"></script>
+        <div class="py-3 fixed-bottom text-center bg-secondary text-white">
+                Copyright &copy; 2018 Gryffndor
+        </div> 
+    </div>
 
-      <script src="assets/javascript/candidate.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-      <script>
-          getArticles("election")
-      </script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+
+    <!-- Date/Time Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.29.0/date_fns.min.js"></script>
+
+    <!-- Chart.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+    <script src="assets/javascript/candidate.js"></script>
+
+    <script>
+        getArticles("election")
+    </script>
 </body>
 
 </html>
