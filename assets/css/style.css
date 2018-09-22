@@ -4,22 +4,7 @@ html {
 }
 
 
-/* .container {
-    padding: 20px;
-} */
-
-/* .media {
-    padding: 20px;
-    border-radius: 3px;
-    margin: 10px 0px;
-    max-width: 100%;
-}
-
-/* .jumbotron {
-    padding: 10px;
-} */
-
-h2 {
+/* h2 {
     text-align: center;
     margin: 10px;
 }
@@ -31,7 +16,7 @@ h4 {
 
 h5 {
     text-align: center;
-}
+} */
 
 
 .list-group-item {
@@ -48,11 +33,11 @@ h5 {
 
 .card-img-top {
     width: 100%;
-    height: 20vw;
+    height: 23vw;
     object-fit: cover;
 }
 
-footer {
+/* footer {
     text-align: center;
     clear: both;
     background-color: #666;
@@ -63,32 +48,60 @@ footer {
     width: 100%;
     position: absolute;
     bottom: 0;
-}
-
-/* ERIC */
-
-
-/* .card-img-top {
-    padding: 15px;
-}
-
-.card-title {
-    text-align: center;
-}
-
-.card-text {
-    text-align: center;
-}
-
-.list-group-item {
-    display: inline-block;
-    margin: 10px;
-    padding: 30px;
-    width: 75%;
 } */
 
+body {
+    padding-top: 50px;
+    color: #959595;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: black;
+    text-align: center;
+  }
+  
+  .feature {
+    background-color: yellowgreen;
+    color: greenyellow;
+  }
+  
+  .article-intro {
+    margin-bottom: 25px;
+  }
+  
+  .footer-blurb {
+    padding: 30px 0;
+    background-color: goldenrod;
+    color: black;
+  }
+  
+  .footer-blurb-item {
+    padding: 30px;
+  }
+  
+  .small-print {
+    background-color: #fff;
+    padding: 30px 0;
+  }
+  
+  .page-header {
+    text-align: center;
+    
+  }
+  
+  .img-responsive.img-rounded {
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 /* Travis test page */
-*,
+/* *,
 *:before,
 *:after {
     -moz-box-sizing: border-box;
@@ -151,10 +164,10 @@ header {
 
 .inline-items li:last-child {
     padding-right: 0;
-}
+} */
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 47.5em) {
+/* @media screen and (min-width: 47.5em) {
     .leftColumn {
         margin-right: 19.5em;
     }
@@ -165,7 +178,7 @@ header {
         right: 0;
         width: 18.75em;
     }
-}
+} */
 
 /* .card-columns {
     @include media-breakpoint-only(lg) {

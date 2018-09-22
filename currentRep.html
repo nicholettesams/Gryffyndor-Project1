@@ -27,107 +27,109 @@
                     <a class="nav-item nav-link" href="dewine.html">Mike Dewine</a>
                     <a class="nav-item nav-link" href="irvine.html">Travis Irvine</a>
                     <a class="nav-item nav-link" href="newton.html">Constance Gadell-Newton</a>
-                    <a class="nav-item nav-link active" href="currentRep.html">Who are my state representitives?
-                        <span class="sr-only">(current)</span>
+                    <a class="nav-item nav-link active" href="currentRep.html">Who are my representitives?
+                    <span class="sr-only">(current)</span>
                     </a>
                 </div>
             </div>
         </nav>
     </header> 
     <div class="container">
-    <div class="input-group mb-3">
-        <input id="addressInput" type="text" class="form-control" placeholder="User input text" aria-label="Recipient's username"
-            aria-describedby="basic-addon2">
-        <div class="input-group-append">
-            <button id="submit" class="btn btn-outline-secondary" type="button">Button</button>
+        <div class="input-group mb-3">
+            <input id="addressInput" type="text" class="form-control" placeholder="Enter your address or zip code" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button id="submit" class="btn btn-outline-secondary" type="button">Submit</button>
+            </div>
         </div>
-    </div>
 
-    <div id="rep-info">
+        <div id="errorMessage" class="text-danger"></div>
 
-        <div class="card-deck">
-        <div id="president" class="card" style="width: 18rem;">
-            <img id="presidentImg" class="card-img-top" src="" alt="">
-                <div class="card-body">
-                    <a id="presidentLink" href="" target="_blank">
-                        <h5 id="presidentName"></h5>
-                    </a>
-                    <p id="presidentRole">President of the United States</p>
-                    <p id="presidentParty" class="card-text"></p>
-                    <p id="presidentPhone" class="card-text"></p>
+        <div id="rep-info">
+
+            <div class="card-deck">
+                <div id="president" class="card ml-auto" style="max-width: 18rem;">
+                    <img id="presidentImg" class="card-img-top" src="" alt="">
+                    <div class="card-body">
+                        <a id="presidentLink" href="" target="_blank">
+                            <h5 id="presidentName"></h5>
+                        </a>
+                        <p id="presidentRole"></p>
+                        <p id="presidentParty" class="card-text"></p>
+                        <p id="presidentPhone" class="card-text"></p>
+                    </div>
                 </div>
-        </div>
 
-        <div id="vice" class="card" style="width: 18rem;">
-            <img id="viceImg" class="card-img-top" src="" alt="">
-                <div class="card-body">
-                    <a id="viceLink" href="" target="_blank">
-                        <h5 id="viceName"></h5>
-                    </a>
-                    <p id="viceRole">Vice-President of the United States</p>
-                    <p id="viceParty" class="card-text"></p>
-                    <p id="vicePhone" class="card-text"></p>
+                <div id="vice" class="card mr-auto" style="max-width: 18rem;">
+                    <img id="viceImg" class="card-img-top" src="" alt="">
+                    <div class="card-body">
+                        <a id="viceLink" href="" target="_blank">
+                            <h5 id="viceName"></h5>
+                        </a>
+                        <p id="viceRole"></p>
+                        <p id="viceParty" class="card-text"></p>
+                        <p id="vicePhone" class="card-text"></p>
+                    </div>
                 </div>
-        </div>
-        </div>
+            </div>
 
 
-        <div class="card-deck">
-        <div id="governor" class="card" style="width: 18rem;">
-            <img id="governorImg" class="card-img-top" src="" alt="">
-                <div class="card-body">
-                    <a id="governorLink" href="" target="_blank">
-                        <h5 id="governorName"></h5>
-                    </a>
-                    <p id="govenorRole">Governor of Ohio</p>
-                    <p id="governorParty" class="card-text"></p>
-                    <p id="governorPhone" class="card-text"></p>
+            <div class="card-deck">
+                <div id="governor" class="card ml-auto" style="max-width: 18rem;">
+                    <img id="governorImg" class="card-img-top" src="" alt="">
+                    <div class="card-body">
+                        <a id="governorLink" href="" target="_blank">
+                            <h5 id="governorName"></h5>
+                        </a>
+                        <p id="governorRole"></p>
+                        <p id="governorParty" class="card-text"></p>
+                        <p id="governorPhone" class="card-text"></p>
+                    </div>
                 </div>
-        </div>
 
-        <div id="ltGovernor" class="card" style="width: 18rem;">
-            <img id="ltGovernorImg" class="card-img-top" src="" alt="">
-                <div class="card-body">
-                    <a id="ltGovernorLink" href="" target="_blank">
-                        <h5 id="ltGovernorName"></h5>
-                    </a>
-                    <p id="ltGovenorRole">Lieutenant Governor of Ohio</p>
-                    <p id="ltGovernorParty" class="card-text"></p>
-                    <p id="ltGovernorPhone" class="card-text"></p>
+                <div id="ltGovernor" class="card mr-auto" style="max-width: 18rem;">
+                    <img id="ltGovernorImg" class="card-img-top" src="" alt="">
+                    <div class="card-body">
+                        <a id="ltGovernorLink" href="" target="_blank">
+                            <h5 id="ltGovernorName"></h5>
+                        </a>
+                        <p id="ltGovernorRole"></p>
+                        <p id="ltGovernorParty" class="card-text"></p>
+                        <p id="ltGovernorPhone" class="card-text"></p>
+                    </div>
                 </div>
-        </div>
-        </div>
+            </div>
 
-        <div class="card-deck">
-        <div id="senator1" class="card" style="width: 18rem;">
-            <img id="senator1Img" class="card-img-top" src="" alt="">
-                <div class="card-body">
-                    <a id="senator1Link" href="" target="_blank">
-                        <h5 id="senator1Name"></h5>
-                    </a>
-                    <p id="senator1Role">Senator</p>
-                    <p id="senator1Party" class="card-text"></p>
-                    <p id="senator1Phone" class="card-text"></p>
+            <div class="card-deck">
+                <div id="senator1" class="card ml-auto" style="max-width: 18rem;">
+                    <img id="senator1Img" class="card-img-top" src="" alt="">
+                    <div class="card-body">
+                        <a id="senator1Link" href="" target="_blank">
+                            <h5 id="senator1Name"></h5>
+                        </a>
+                        <p id="senator1Role">Senator</p>
+                        <p id="senator1Party" class="card-text"></p>
+                        <p id="senator1Phone" class="card-text"></p>
+                    </div>
                 </div>
-        </div>
 
-        <div id="senator2" class="card" style="width: 18rem;">
-            <img id="senator2Img" class="card-img-top" src="" alt="">
-                <div class="card-body">
-                    <a id="senator2Link" href="" target="_blank">
-                        <h5 id="senator2Name"></h5>
-                    </a>
-                    <p id="senator2Role">Senator</p>
-                    <p id="senator2Party" class="card-text"></p>
-                    <p id="senator2Phone" class="card-text"></p>
+                <div id="senator2" class="card mr-auto" style="max-width: 18rem;">
+                    <img id="senator2Img" class="card-img-top" src="" alt="">
+                    <div class="card-body">
+                        <a id="senator2Link" href="" target="_blank">
+                            <h5 id="senator2Name"></h5>
+                        </a>
+                        <p id="senator2Role">Senator</p>
+                        <p id="senator2Party" class="card-text"></p>
+                        <p id="senator2Phone" class="card-text"></p>
+                    </div>
                 </div>
-        </div>
-        </div>
+            </div>
 
 
 
-        <div id="houseRep" class="card" style="width: 18rem;">
-            <img id="houseRepImg" class="card-img-top" src="" alt="">
+            <div id="houseRep" class="card mx-auto" style="max-width: 18rem;">
+                <img id="houseRepImg" class="card-img-top" src="" alt="">
                 <div class="card-body">
                     <a id="houseRepLink" href="" target="_blank">
                         <h5 id="houseRepName"></h5>
@@ -136,9 +138,9 @@
                     <p id="houseRepParty" class="card-text"></p>
                     <p id="houseRepPhone" class="card-text"></p>
                 </div>
-        </div>       
+            </div>       
 
-    </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
