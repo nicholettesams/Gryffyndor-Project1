@@ -13,64 +13,44 @@ html {
     border-radius: 3px;
     margin: 10px 0px;
     max-width: 100%;
-} */
+}
 
 /* .jumbotron {
     padding: 10px;
 } */
 
-h3 {
+h2 {
     text-align: center;
     margin: 10px;
 }
 
-/* h4 {
-    color: white;
-
-} */
-
-img {
+h4 {
+    color: black;
     text-align: center;
-    width: 200px;
-    height: auto;
+}
+
+h5 {
+    text-align: center;
+}
+
+
+.list-group-item {
+    position: relative;
+    display: block;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
 }
 
 .card {
     margin: 10px;
 }
 
-  
-/* NEWWWWWWW */
-#vote-card {
-    box-sizing: border-box;
-    padding: 20px;
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
 }
-
-.card-body {
-    padding: 15px;
-}
-
-#article-list {
-    margin: 10px;
-}
-
-
-
-/* .grn {
-    background-color: green;
-}
-
-.dem {
-    background-color: blue;
-}
-
-.repb {
-    background-color: red;
-}
-
-.lib {
-    background-color: rgba(197, 194, 0, 0.932);
-} */
 
 footer {
     text-align: center;
@@ -84,3 +64,114 @@ footer {
     position: absolute;
     bottom: 0;
 }
+
+/* ERIC */
+
+
+/* .card-img-top {
+    padding: 15px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.list-group-item {
+    display: inline-block;
+    margin: 10px;
+    padding: 30px;
+    width: 75%;
+} */
+
+/* Travis test page */
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.columnsContainer,
+footer,
+header {
+    position: relative;
+    margin: 0.5em;
+}
+
+.leftColumn,
+.rightColumn {
+    border: 1px solid #ccc;
+    padding: 1.25em;
+}
+
+.leftColumn {
+    margin-bottom: 0.5em;
+}
+
+.nav {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.nav>li,
+.nav>li>a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.inline-items {
+    margin-top: 0;
+}
+
+.inline-items li {
+    margin-left: 0;
+    border-left: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inline-items li:first-child {
+    margin-left: 0;
+    border: none;
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.inline-items li:last-child {
+    padding-right: 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 47.5em) {
+    .leftColumn {
+        margin-right: 19.5em;
+    }
+
+    .rightColumn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 18.75em;
+    }
+}
+
+/* .card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+  } */
