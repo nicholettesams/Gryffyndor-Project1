@@ -1,20 +1,28 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ohio Gubernatorial Race 2018</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!--Original CSS-->
+
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand active" href="index.html">Ohio Gubernatorial Race 2018 NEW
+            <a class="navbar-brand active" href="index.html">Ohio Gubernatorial Race 2018
                 <span class="sr-only">(current)</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -29,154 +37,212 @@
                     <a class="nav-item nav-link" href="newton.html">Constance Gadell-Newton</a>
                     <a class="nav-item nav-link" href="currentRep.html">Who are my representitives?</a>
                 </div>
+
             </div>
-        </nav>
-    </header>
-    <div class="jumbotron jumbotron-fluid p-4">
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="cordray.html">Cordray</a>
+                    </li>
+                    <li>
+                        <a href="dewine.html">Dewine</a>
+                    </li>
+                    <li>
+                        <a href="irvine.html">Irvine</a>
+                    </li>
+                    <li>
+                        <a href="newton.html">Newton</a>
+                    </li>
+                    <li>
+                        <a href="currentRep.html">Who are my State representitives?</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Wikipedia
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="about-us">
+                            <li>
+                                <a href="https://ballotpedia.org/Travis_Irvine">Irvine</a>
+                            </li>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/Richard_Cordray">Cordray</a>
+                            </li>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/Mike_DeWine">Dewine</a>
+                            </li>
+                            <li>
+                                <a href="https://en.everybodywiki.com/Constance_Gadell-Newton">Gadell-Newton</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Search -->
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-default">Search</button>
+                </form>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="jumbotron feature">
         <div class="container">
-            <h1 class="display-3">Ohio Gov Candidates</h1>
-            <p class="lead">This is where we write a neat headline. (The 2018 Ohio gubernatorial election will take
-                place on November 6, 2018)</p>
-            <!-- Add countdown timer until election day? -->
+            <h1>
+                <span class="glyphicon glyphicon-equalizer"></span> Ohio Governor Candidates</h1>
+            <p>This is where we write a neat headline. (The 2018 Ohio gubernatorial election will take place on
+                November 6, 2018)</p>
+            <p>
+                <!--    <a class="btn btn-default" href="#">Vote Now!</a> -->
+            </p>
         </div>
     </div>
-    <h2 class="display-5">2018 Candidates</h2>
+
+    <!-- Content -->
     <div class="container">
-        <div class="card-deck mx-auto text-center">
-            <div class="row">
-                <div class="card">
-                    <img class="card-img-top" src="https://pbs.twimg.com/profile_images/1030932683092779008/is8bdj39_400x400.jpg"
-                        alt="Travis Irvine">
-                    <div class="card-body">
-                        <h5 class="card-title">Travis Irvine</h5>
-                        <p class="card-text text-warning">Independent</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><strong>Running mate:</strong><br>Todd Grayson</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="https://irvineforohio.com/" class="card-link" target="_blank">Website</a>
-                        <a href="https://ballotpedia.org/Travis_Irvine" class="card-link" target="_blank">Wikipedia</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/d/df/Richard_Cordray_official_portrait_%28cropped%29.jpg"
-                        alt="Richard Cordray">
-                    <div class="card-body">
-                        <h5 class="card-title">Richard Cordray</h5>
-                        <p class="card-text text-primary">Democratic</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><strong>Running mate:</strong><br>Betty Sutton</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="https://cordrayforohio.com/" class="card-link" target="_blank">Website</a>
-                        <a href="https://en.wikipedia.org/wiki/Richard_Cordray" class="card-link" target="_blank">Wikipedia</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/2011MikeDewineHiResWeb.jpg"
-                        alt="Mike DeWine">
-                    <div class="card-body">
-                        <h5 class="card-title">Mike DeWine</h5>
-                        <p class="card-text text-danger">Republican</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><strong>Running mate:</strong><br>Jon A. Husted</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="https://www.mikedewine.com/" class="card-link" target="_blank">Website</a>
-                        <a href="https://en.wikipedia.org/wiki/Mike_DeWine" class="card-link" target="_blank">Wikipedia</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Constance_Gadell-Newton_Portrait.jpg"
-                        alt="Constance Gadell-Newton">
-                    <div class="card-body">
-                        <h5 class="card-title">Constance Gadell-Newton</h5>
-                        <p class="card-text text-success">Green</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><strong>Running mate:</strong><br>Brett R. Joseph</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="https://www.constanceforohio.org/" class="card-link" target="_blank">Website</a>
-                        <a href="https://en.everybodywiki.com/Constance_Gadell-Newton" class="card-link" target="_blank">Wikipedia</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="card col-md-8 p-4">
-                        <h5 class="card-title">Are you planning to vote in the 2018 Midterm Elections?</h5>
-                        <div class="card-body text-left">
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="vote" id="optYes" value="option1">
-                                    Yes
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="vote" id="optNo" value="option2">
-                                    No
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="vote" id="optUnsure" value="option3">
-                                    Unsure
-                                </label>
-                                <br>
-                                <input class="btn btn-md btn-secondary" id="vote" type="submit" value="Vote">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5" id="canvas-holder" style="width:40%">
-                        <canvas id="myChart"></canvas>
-                    </div>
-                </div>
+
+        <!-- Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">2018 CANDIDATES
+                    <!--    <small>Test</small> -->
+                </h1>
+                <p>Ohio Attorney General and former U.S. Senator Mike DeWine, civil rights attorney and former Green
+                    Party co-chair
+                    Constance Gadell-Newton, filmmaker and journalist Travis Irvine, and former Consumer Financial
+                    Protection
+                    Bureau Director and Ohio Attorney General Richard Cordray will face off in the general election.</p>
             </div>
         </div>
-    </div>
+
+        <!-- Governor Row -->
+        <div class="row">
+            <!--Irvine-->
+            <article class="col-md-3 article-intro">
+                <a href="https://irvineforohio.com/">
+                    <img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/1030932683092779008/is8bdj39_400x400.jpg"
+                        alt="Travis Irvine">
+                </a>
+                <h3>
+                    <a href="https://irvineforohio.com/">Travis Irvine</a>
+                </h3>
+                <p> In 2018, Travis recognized the need for a non-standard, non-establishment candidate, who cares more
+                    about
+                    Ohio than "climbing the political ladder."</p>
+            </article>
+            <!--Cordray-->
+            <article class="col-md-3 article-intro">
+                <a href="https://cordrayforohio.com/">
+                    <img class="img-responsive img-rounded" src="https://upload.wikimedia.org/wikipedia/commons/d/df/Richard_Cordray_official_portrait_%28cropped%29.jpg"
+                        alt="Richard Cordray">
+                </a>
+                <h3>
+                    <a href="https://cordrayforohio.com/">Richard Cordray</a>
+                </h3>
+                <p>Over the last five years, Cordray served as the first-ever director of the Consumer Financial
+                    Protection
+                    Bureau, a position he was appointed to by President Obama, where he led an agency that was launched
+                    in
+                    the aftermath of the nation’s financial crisis</p>
+            </article>
+            <!--Dewine-->
+            <article class="col-md-3 article-intro">
+                <a href="https://www.mikedewine.com/">
+                    <img class="img-responsive img-rounded" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/2011MikeDewineHiResWeb.jpg"
+                        alt="Generic placeholder image" height="100" width="300">
+                </a>
+                <h3>
+                    <a href="https://www.mikedewine.com/">Mike Dewine</a>
+                </h3>
+                <p>Mike DeWine loves Ohio and cares passionately about our state’s future. He knows that every parent
+                    wants
+                    their kids to have an opportunity for a solid education, a healthy life that is free of drugs, and
+                    a
+                    good paying job later in life.</p>
+            </article>
+            <!--Gadell-Newton-->
+            <article class="col-md-3 article-intro">
+                <a href="https://www.constanceforohio.org/">
+                    <img class="img-responsive img-rounded" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Constance_Gadell-Newton_Portrait.jpg"
+                        alt="Generic placeholder image">
+                </a>
+                <h3>
+                    <a href="https://www.constanceforohio.org/">Constance Gadell-Newton</a>
+                </h3>
+                <p> Constance is an Attorney and Guardian ad Litem in private practice in the Franklin County Courts.
+                </p>
+            </article>
+        </div>
     </div>
 
-    <div class="container bg-light">
-        <h2>Article Search</h2>
-        <form id="article-input" class="form-inline row m-2">
+    <!-- /.container -->
+    </div>
+    </footer>
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">Are you planning to vote in the 2018 Midterm Elections?</h5>
+            <div class="card-body">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="vote" id="optYes" value="option1"> Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="vote" id="optNo" value="option2"> No
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="vote" id="optUnsure" value="option3"> Unsure
+                    </label>
+                    <br>
+                    <input id="vote" type="submit" value="Vote">
+                </div>
+            </div>
+            <div id="canvas-holder" style="width:40%">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
 
-            <label class="p-1" for="begin-input">From Date:</label>
+        <form id="article-input" class="form-inline row">
+
+            <label for="begin-input">From Date:</label>
             <input id="begin-input" type="date" name="begin-input">
 
-            <label class="p-1" for="end-input">To Date:</label>
+            <label for="end-input">To Date:</label>
             <input id="end-input" type="date" name="end-input">
 
-            <label class="p-1" for="sort-input">Sort By:</label>
+            <label for="sort-input">Sort By:</label>
             <select id="sort-input" name="sort-input">
                 <option value="relevance">Relevance</option>
                 <option value="newest">Date: Newest</option>
                 <option value="oldest">Date: Oldest</option>
             </select>
 
-            <input class="btn btn-primary btn-md m-3" id="search" type="submit" value="Search">
+            <input id="search" type="submit" value="Search">
         </form>
-
         <section id="article-list">
         </section>
+
+        <p>
+            <a href="#">Terms &amp; Conditions</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Contact</a>
+        </p>
+        <p>Copyright &copy; 2018 Gryffndor </p>
     </div>
 
-    <div class="py-3 fixed-bottom text-center bg-secondary text-white">
-        Copyright &copy; 2018 Gryffndor
-    </div>
-    </div>
-
-    <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -185,9 +251,6 @@
 
     <!-- Date/Time Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.29.0/date_fns.min.js"></script>
-
-    <!-- Underscore-->
-    <script src="https://cdn.jsdelivr.net/npm/underscore@1.9.1/underscore.min.js"></script>
 
     <!-- Chart.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
