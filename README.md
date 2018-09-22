@@ -2,10 +2,10 @@
 
 # Contributors
 
-Erin Clancy
-Sarah Lopriore
-Nicholette Sams
-Eric Tolliver
+- Erin Clancy
+- Sarah Lopriore
+- Nicholette Sams
+- Eric Tolliver
 
 # Intro
 
@@ -13,12 +13,14 @@ With the 2018 Midterm elections quickly approaching, our team decided to do an e
 
 # Design Process
 
-Our team worked together on the overall design and then split into two teams, a front-end team (Erin and Eric) and a back-end team (Sarah and Nicholette). The front-end team was dedicated to the HTML and CSS of the pages, utilizing the Bootstrap framework for most of the styling. The back-end team worked on javascript and connection to the APIs using AJAX requests and imported javascript libraries. After each person finished their task, we reviewed and made tweaks as a group to ensure cohesion.
+Our team worked together on the overall design and then split into two teams, a front-end team (Erin and Eric) and a back-end team (Sarah and Nicholette). The front-end team was dedicated to the HTML, CSS and content of the pages, utilizing the Bootstrap framework for most of the styling. The back-end team worked on javascript and connection to the APIs using AJAX requests and imported javascript libraries. After each person finished their task, we reviewed and made tweaks as a group to ensure cohesion.
 
 # Technologies
 
 HTML
 CSS
+Javascript
+JQuery
 Bootstrap Framework
 New York Times Articles Search API
 Google Civic Information API
