@@ -2,80 +2,200 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Candidates</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ohio Gubernatorial Race 2018</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!--Original CSS-->
+
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">Ohio Gubernatorial Race 2018</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="index.html">Home</a>
-                    <a class="nav-item nav-link" href="cordray.html">Richard Cordray</a>
-                    <a class="nav-item nav-link" href="dewine.html">Mike Dewine</a>
-                    <a class="nav-item nav-link" href="irvine.html">Travis Irvine</a>
-                    <a class="nav-item nav-link active" href="newton.html">Constance Gadell-Newton</a>
-                    <span class="sr-only">(current)</span>
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="jumbotron jumbotron-fluid">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <h1 class="display-3">Ohio Gov Candidates</h1>
-            <p class="lead">This is where we write a neat headline. (The 2018 Ohio gubernatorial election will take
-                place on November 6, 2018)</p>
-            <!-- Add countdown timer until election day? -->
-        </div>
-    </div>
-    <h3>2018 Candidates</h3>
-    <div class="col-md-3">
-        <div class="media grn">
-            <div class="media-body">
-                <h4 class="mt-0 mb-1">Constance Gadell-Newton</h4>
-                <h6>Running mate: Brett R. Joseph</h6>
-                <ul class="list-group">
-                    <li>Attorney, co-chair of the Ohio Green Party</li>
-                    <li>Nominee for the State House in 2016</li>
-                    <li>Vestibulum at eros</li>
-                    <li>Porta ac consectetur ac</li>
-                    <li>Vestibulum at eros</li>
-                </ul>
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <span class="glyphicon glyphicon-flag"></span>
+                    Ohio Gubernatorial Race 2018
+                </a>
             </div>
-            <img class="ml-3" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Constance_Gadell-Newton_Portrait.jpg"
-                alt="Generic placeholder image">
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="cordray.html">Cordray</a>
+                    </li>
+                    <li>
+                        <a href="dewine.html">Dewine</a>
+                    </li>
+                    <li>
+                        <a href="irvine.html">Irvine</a>
+                    </li>
+                    <li>
+                        <a href="newton.html">Newton</a>
+                    </li>
+                    <li>
+                        <a href="currentRep.html">Who are my State representitives?</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Wikipedia
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="about-us">
+                            <li>
+                                <a href="https://ballotpedia.org/Travis_Irvine">Irvine</a>
+                            </li>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/Richard_Cordray">Cordray</a>
+                            </li>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/Mike_DeWine">Dewine</a>
+                            </li>
+                            <li>
+                                <a href="https://en.everybodywiki.com/Constance_Gadell-Newton">Gadell-Newton</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Search -->
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-default">Search</button>
+                </form>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="jumbotron feature">
+        <div class="container">
+            <h1>
+                <span class="glyphicon glyphicon-equalizer"></span> Ohio Governor Candidates</h1>
+            <p>This is where we write a neat headline. (The 2018 Ohio gubernatorial election will take place on
+                November 6, 2018)</p>
+            <p>
+                <!--    <a class="btn btn-default" href="#">Vote Now!</a> -->
+            </p>
         </div>
     </div>
 
-    <div id="article-list">
+    <!-- Content -->
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Constance Gadell-Newton
+                    <!--   <small>Test</small> -->
+                </h1>
+            </div>
+        </div>
+
+        <!-- Governor Row -->
+        <div class="row">
+            <!--Gadell-Newton-->
+            <article class="col-md-12 article-intro">
+                <a href="https://www.constanceforohio.org/">
+                    <img class="img-responsive img-rounded" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Constance_Gadell-Newton_Portrait.jpg"
+                        alt="Generic placeholder image">
+                </a>
+                <h3>
+                    <a href="https://www.constanceforohio.org/">Constance Gadell-Newton</a>
+                </h3>
+                <p> Constance is an Attorney and Guardian ad Litem in private practice in the Franklin County Courts.
+                </p>
+            </article>
+        </div>
+        <!-- /.row -->
 
     </div>
+    <!-- /.container -->
 
-    <div class="py-3 fixed-bottom text-center bg-secondary text-white">
-        Copyright &copy; 2018 Gryffndor
-    </div>
+    <footer>
+        <div class="footer-blurb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 footer-blurb-item">
+                        <h3>
+                            <span class="glyphicon glyphicon-grain"></span> Environment</h3>
+                        <p>Strengthen and enforce Ohio’s water and air quality standards to incentivize best practices
+                            that
+                            substantially reduce public and environmental health risks stemming from cumulative, long
+                            term
+                            pollution sources, according to the precautionary principle.</p>
+                        <p>
+                            <a class="btn btn-default" href="#">Procrastinate</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-4 footer-blurb-item">
+                        <h3>
+                            <span class="glyphicon glyphicon-education"></span> Education</h3>
+                        <p>Engage a state-wide performance review and revoke the charters of all low performing charter
+                            schools
+                            that are unable or unwilling to undergo transition away from the use of private management
+                            entities.
+                        </p>
+                        <p>
+                            <a class="btn btn-default" href="#">Unleash</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-4 footer-blurb-item">
+                        <h3>
+                            <span class="glyphicon glyphicon-apple"></span> Healthcare</h3>
+                        <p>Institute Single-payer healthcare for Ohio and give all Ohioans basic, quality healthcare as
+                            a right,
+                            including comprehensive reproductive healthcare and sexual health care for women and people
+                            of
+                            all genders.</p>
+                        <p>
+                            <a class="btn btn-default" href="#">Synergize</a>
+                        </p>
+                    </div>
 
-        <!-- jQuery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                </div>
+                <!-- /.row -->
+            </div>
+        </div>
 
-        <script src="assets/javascript/candidate.js"></script>
-        <script src="assets/javascript/finance.js"></script>
-        <script>
-            getArticles("Constance+Gadell-Newton+Ohio+Governor+2018")
-        </script>
+        <div class="small-print">
+            <div class="container">
+                <p>
+                    <a href="#">Terms &amp; Conditions</a> |
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Contact</a>
+                </p>
+                <p>Copyright &copy; 2018 Gryffndor </p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
