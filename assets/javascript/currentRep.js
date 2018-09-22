@@ -29,6 +29,8 @@ $(document).ready(function() {
 
                 if (!response) {
                     $("#errorMessage").append("<p></p>").text("This is not a valid address or zip code, please try again.");
+                } else if (response.normalizedInput.state !== "OH") {
+                    $("errorMessage").append("<p></p>").text("This is not a valid Ohio address and zip code, please try again.")
                 };
                 $("#errorMessage").empty();
                 $("#presidentName").text(response.officials[0].name);
