@@ -1,14 +1,22 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ohio Gubernatorial Race 2018</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!--Original CSS-->
+
 </head>
 
 <body>
@@ -33,13 +41,18 @@
         </nav>
     </header>
     <div class="jumbotron jumbotron-fluid p-4">
+
         <div class="container">
-            <h1 class="display-3">Ohio Gov Candidates</h1>
-            <p class="lead">This is where we write a neat headline. (The 2018 Ohio gubernatorial election will take
-                place on November 6, 2018)</p>
-            <!-- Add countdown timer until election day? -->
+            <h1>
+                <span class="glyphicon glyphicon-equalizer"></span> Ohio Governor Candidates</h1>
+            <p>This is where we write a neat headline. (The 2018 Ohio gubernatorial election will take place on
+                November 6, 2018)</p>
+            <p>
+                <!--    <a class="btn btn-default" href="#">Vote Now!</a> -->
+            </p>
         </div>
     </div>
+
     <h2 class="display-5">2018 Candidates</h2>
     <div class="container">
         <div class="card-deck mx-auto text-center">
@@ -157,17 +170,19 @@
                 <option value="newest">Date: Newest</option>
                 <option value="oldest">Date: Oldest</option>
             </select>
-
             <input class="btn btn-primary btn-md m-3" id="search" type="submit" value="Search">
+
         </form>
 
         <section id="article-list">
         </section>
     </div>
 
+
     <div class="py-3 fixed-bottom text-center bg-secondary text-white">
         Copyright &copy; 2018 Gryffndor
     </div>
+
     </div>
 
     <!-- Bootstrap -->
@@ -185,9 +200,6 @@
 
     <!-- Date/Time Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.29.0/date_fns.min.js"></script>
-
-    <!-- Underscore-->
-    <script src="https://cdn.jsdelivr.net/npm/underscore@1.9.1/underscore.min.js"></script>
 
     <!-- Chart.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
