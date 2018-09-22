@@ -15,6 +15,8 @@ Our team worked together on the overall design and then split into two teams, a 
 # Technologies
 HTML
 CSS
+Javascript
+JQuery
 Bootstrap Framework
 New York Times Articles Search API
 Google Civic Information API
