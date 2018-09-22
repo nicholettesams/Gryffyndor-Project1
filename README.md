@@ -54,19 +54,19 @@ A non-scientific poll can also be found on the home page asking visitors, "Do yo
   3.  money raised
 - Display candidate information for states other than just Ohio.
 
-<!--HTML/CSS/Bootstrap items to fix 09/21 -->
-<!--Highlighting of current tabs 09/21 -->
-<!--Decide on format for candidate pages 09/21 -->
-<!--Wikipedia drop caret not working/was working before :( 09/21 -->
-<!--Search button added/looks cute but don't work, not sure if we keep 09/21 -->
-<!--Center poll to index.html page 09/21 -->
-<!--Cordray index.html picture formatting is making me kinda mad 09/21 -->
-<!--Gadell-Newton page left in old format for science 09/21 -->
-<!--Add party color coding 09/21 -->
-<!--Decide on text to include on candidate pages 09/21 -->
-<!--MISC/New bootstrap added, lots of folders, not sure all are needed, will clean-up 09/21 -->
-<!--Formatting of location of CSS files change due to new bootstrap added 09/21 -->
-<!--Glyphicons and font folder added for cuteness 09/21 -->
-<!--JS folder added for bootstrap 09/21 -->
-<!--Cleaned most typos, double check for more 09/21 -->
-<!--Added Newton updated html 09/22 -->
+<!--HTML/CSS/Bootstrap items to fix 09/21-->
+<!--Highlighting of current tabs 09/21-->
+<!--Decide on format for candidate pages 09/21-->
+<!--Wikipedia drop caret not working/was working before :( 09/21-->
+<!--Search button added/looks cute but don't work, not sure if we keep 09/21-->
+<!--Center poll to index.html page 09/21-->
+<!--Cordray index.html picture formatting is making me kinda mad 09/21-->
+<!--Gadell-Newton page left in old format for science 09/21-->
+<!--Add party color coding 09/21-->
+<!--Decide on text to include on candidate pages 09/21-->
+<!--MISC/New bootstrap added, lots of folders, not sure all are needed, will clean-up 09/21-->
+<!--Formatting of location of CSS files change due to new bootstrap added 09/21-->
+<!--Glyphicons and font folder added for cuteness 09/21-->
+<!--JS folder added for bootstrap 09/21-->
+<!--Cleaned most typos, will double check for more 09/22-->
+<!--Added Newton updated html 09/22-->
