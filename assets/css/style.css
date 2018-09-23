@@ -3,22 +3,6 @@ html {
     min-height: 100%;
 }
 
-
-/* h2 {
-    text-align: center;
-    margin: 10px;
-}
-
-h4 {
-    color: black;
-    text-align: center;
-}
-
-h5 {
-    text-align: center;
-} */
-
-
 .list-group-item {
     position: relative;
     display: block;
@@ -49,11 +33,6 @@ h5 {
     position: absolute;
     bottom: 0;
 } */
-
-body {
-    padding-top: 50px;
-    color: #959595;
-}
 
 h1,
 h2,
