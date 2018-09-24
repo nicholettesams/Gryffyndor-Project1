@@ -3,6 +3,10 @@ html {
     min-height: 100%;
 }
 
+body {
+    margin: 0;
+}
+
 .list-group-item {
     position: relative;
     display: block;
@@ -21,27 +25,18 @@ html {
     object-fit: cover;
 }
 
-/* footer {
-    text-align: center;
-    clear: both;
-    background-color: #666;
-    color: #fff;
-    font-size: 12px;
-    padding: 30px 0px;
-    border-top: 8px solid #4aaaa5;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-} */
-
 h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
     color: black;
     text-align: center;
+}
+
+h6 {
+    color: black;
+    text-align: left;
 }
 
 .article-intro {
@@ -73,10 +68,6 @@ h6 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-body {
-    margin: 0;
 }
 
 .container {
