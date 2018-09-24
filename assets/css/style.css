@@ -3,22 +3,6 @@ html {
     min-height: 100%;
 }
 
-
-/* h2 {
-    text-align: center;
-    margin: 10px;
-}
-
-h4 {
-    color: black;
-    text-align: center;
-}
-
-h5 {
-    text-align: center;
-} */
-
-
 .list-group-item {
     position: relative;
     display: block;
@@ -50,62 +34,57 @@ h5 {
     bottom: 0;
 } */
 
-body {
-    padding-top: 50px;
-    color: #959595;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: black;
     text-align: center;
-  }
-  
-  .article-intro {
+}
+
+.article-intro {
     margin-bottom: 25px;
-  }
-  
-  .footer-blurb {
+}
+
+.footer-blurb {
     padding: 30px 0;
     background-color: goldenrod;
     color: black;
-  }
-  
-  .footer-blurb-item {
+}
+
+.footer-blurb-item {
     padding: 30px;
-  }
-  
-  .small-print {
+}
+
+.small-print {
     background-color: #fff;
     padding: 30px 0;
-  }
-  
-  .page-header {
+}
+
+.page-header {
     text-align: center;
 
-  }
-  
-  .img-responsive.img-rounded {
+}
+
+.img-responsive.img-rounded {
     height: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 body {
     margin: 0;
 }
 
 .container {
-  width: 80%;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  flex-flow: row wrap;
-  justify-content: center;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
 }
