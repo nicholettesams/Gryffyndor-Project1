@@ -25,6 +25,10 @@ body {
     object-fit: cover;
 }
 
+.container-fluid {
+    width: 80%;
+}
+
 h1,
 h2,
 h3,
