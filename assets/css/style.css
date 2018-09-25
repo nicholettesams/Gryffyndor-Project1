@@ -3,21 +3,9 @@ html {
     min-height: 100%;
 }
 
-
-/* h2 {
-    text-align: center;
-    margin: 10px;
+body {
+    margin: 0;
 }
-
-h4 {
-    color: black;
-    text-align: center;
-}
-
-h5 {
-    text-align: center;
-} */
-
 
 .list-group-item {
     position: relative;
@@ -32,80 +20,62 @@ h5 {
 }
 
 .card-img-top {
-    width: 100%;
+    max-width: 100%;
     height: 23vw;
     object-fit: cover;
 }
 
-/* footer {
-    text-align: center;
-    clear: both;
-    background-color: #666;
-    color: #fff;
-    font-size: 12px;
-    padding: 30px 0px;
-    border-top: 8px solid #4aaaa5;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-} */
-
-body {
-    padding-top: 50px;
-    color: #959595;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: black;
     text-align: center;
-  }
-  
-  .article-intro {
+}
+
+h6 {
+    color: black;
+    text-align: left;
+}
+
+.article-intro {
     margin-bottom: 25px;
-  }
-  
-  .footer-blurb {
+}
+
+.footer-blurb {
     padding: 30px 0;
     background-color: goldenrod;
     color: black;
-  }
-  
-  .footer-blurb-item {
+}
+
+.footer-blurb-item {
     padding: 30px;
-  }
-  
-  .small-print {
+}
+
+.small-print {
     background-color: #fff;
     padding: 30px 0;
-  }
-  
-  .page-header {
+}
+
+.page-header {
     text-align: center;
 
-  }
-  
-  .img-responsive.img-rounded {
+}
+
+.img-responsive.img-rounded {
     height: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-body {
-    margin: 0;
 }
 
 .container {
-  width: 80%;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  flex-flow: row wrap;
-  justify-content: center;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
 }

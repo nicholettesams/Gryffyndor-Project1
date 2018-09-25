@@ -6,17 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ohio Gubernatorial Race 2018</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <!-Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
-    <link href="css/custom.css" rel="stylesheet">
-
-    <!--Original CSS-->
-
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
 </head>
 
 <body>
@@ -37,33 +29,16 @@
                     </a>
                     <a class="nav-item nav-link" href="currentRep.html">Who are my representitives?</a>
                 </div>
-
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <div class="jumbotron feature">
-        <div class="container">
-            <h1>
-                <span class="glyphicon glyphicon-equalizer"></span> Ohio Governor Candidates</h1>
-            <p>This is where we write a neat headline. (The 2018 Ohio gubernatorial election will take place on
-                November 6, 2018)</p>
-            <p>
-                <!--    <a class="btn btn-default" href="#">Vote Now!</a> -->
-            </p>
-        </div>
-    </div>
-
+        </nav>
+    </header>
     <!-- Content -->
     <div class="container">
 
         <!-- Heading -->
-        <div class="row">
-            <div class="col-lg-12">
+        <div class="row w-100">
+            <div class="col-lg-12 text-center">
                 <h1 class="page-header">Constance Gadell-Newton
-                    <!--   <small>Test</small> -->
                 </h1>
             </div>
         </div>
@@ -74,19 +49,29 @@
             <article class="col-md-12 article-intro">
                 <a href="https://www.constanceforohio.org/">
                     <img class="img-responsive img-rounded" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Constance_Gadell-Newton_Portrait.jpg"
-                        alt="Generic placeholder image">
+                        alt="Constance Gadell-Newton">
                 </a>
                 <h3>
                     <a href="https://www.constanceforohio.org/">Constance Gadell-Newton</a>
                 </h3>
                 <p> Constance is an Attorney and Guardian ad Litem in private practice in the Franklin County Courts.
                 </p>
+                <h6><strong>Positions Held:</strong></h6>
+                <ul class="list-group">
+                    <li>Attorney, co-chair of the Ohio Green Party</li>
+                    <li>Nominee for the State House in 2016</li>
+                </ul>
             </article>
         </div>
         <!-- /.row -->
 
     </div>
     <!-- /.container -->
+
+    <!-- Article List -->
+    <div class="container-fluid bg-light p-3 border" id="article-list">
+        <p class="display-4 text-center">NYT Articles</h2>
+    </div>
 
     <footer>
         <div class="footer-blurb">
@@ -128,7 +113,13 @@
                             <a class="btn btn-default" href="#">Synergize</a>
                         </p>
                     </div>
-
+                </div>
+            </div>
+            <div class="py-3 fixed-bottom text-center bg-secondary text-white">
+                Copyright &copy; 2018 Gryffndor
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -140,8 +131,10 @@
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- Date/Time Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.29.0/date_fns.min.js"></script>
+
     <script src="assets/javascript/candidate.js"></script>
-    <script src="assets/javascript/finance.js"></script>
     <script>
         getArticles("Constance+Gadell-Newton+Ohio+Governor+2018")
     </script>
