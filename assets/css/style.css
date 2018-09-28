@@ -1,11 +1,12 @@
 html {
     position: relative;
     min-height: 100%;
+    margin-bottom: 40px;
 }
 
-body {
+/* body {
     margin: 0;
-}
+} */
 
 .list-group-item {
     position: relative;
@@ -41,6 +42,10 @@ h5 {
 h6 {
     color: black;
     text-align: left;
+}
+
+footer {
+    clear: both;
 }
 
 .article-intro {
